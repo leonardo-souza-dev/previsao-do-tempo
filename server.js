@@ -1,13 +1,13 @@
 const express = require('express')
 const app = express()
-const http = require('http');
+const https = require('https');
 
 const port = process.env.PORT || 3001
 const extApiCaraCoroa = process.env.EXT_API_CARA_COROA
 
 app.get('/api/previsao-do-tempo', (req, res) => {
 
-  http.get(extApiCaraCoroa, (resp) => {
+  https.get(extApiCaraCoroa, (resp) => {
     let data = ''
 
     resp.on('data', (chunk) => { data += chunk })
