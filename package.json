@@ -1,23 +1,19 @@
 {
-  "name": "crud-nodejs",
-  "version": "0.0.1",
-  "description": "Sorteio de participantes",
+  "name": "previsao-do-tempo",
+  "version": "1.0.0",
+  "description": "Previsão do tempo",
   "main": "server.js",
-  "author": "",
+  "author": "Leonardo Souza",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.16.0",
-    "express": "^4.17.1",
-    "express-load": "^1.1.15",
-    "mongoose": "^4.7.8"
+    "express": "^4.17.1"
   },
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.1"
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ltreze/previsao-do-tempo.git"
   },
   "scripts": {
-    "setup": "npm install && bower install",
-    "start-dev": "nodemon server.js",
+    "setup": "npm install",
     "start": "node server.js"
   }
 }
