@@ -13,7 +13,7 @@ app.get('/api/previsao-do-tempo', (req, res) => {
     resp.on('data', (chunk) => { data += chunk })
     
     resp.on('end', () => {
-      let resultado = JSON.parse(data)
+      let resultado = JSON.parse(data).resultado
       res.send(resultado == 'cara' ? 'chuva' : 'sol')
     })  
   }).on("error", (err) => {
