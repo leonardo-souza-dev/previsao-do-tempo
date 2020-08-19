@@ -5,7 +5,7 @@ const https = require('https');
 const port = process.env.PORT || 3001
 const extApiCaraCoroa = process.env.EXT_API_CARA_COROA
 
-app.get('/api/previsao-do-tempo', (req, res) => {
+app.get('/', (req, res) => {
 
   https.get(extApiCaraCoroa, (resp) => {
     let data = ''
